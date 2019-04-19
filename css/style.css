@@ -1,0 +1,555 @@
+/* Import _misc */
+/* Color scheme */
+/* Fonts */
+@font-face {
+  font-family: 'Museo Sans Cyrl 500';
+  src: url("../fonts/MuseoSansCyrl-500.eot");
+  src: local("../fonts/MuseoSansCyrl-500"), url("../fonts/MuseoSansCyrl-500.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl-500.woff") format("woff"), url("../fonts/MuseoSansCyrl-500.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans Cyrl 300';
+  src: url("../fonts/MuseoSansCyrl-300.eot");
+  src: local("../fonts/MuseoSansCyrl-300"), url("../fonts/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl-300.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans Cyrl 700';
+  src: url("../fonts/MuseoSansCyrl-700.eot");
+  src: local("../fonts/MuseoSansCyrl-700"), url("../fonts/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyrl-700.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Fonts mixin */
+/* Base settings */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.gird {
+  display: -ms-grid;
+  display: grid;
+}
+
+.button {
+  font-family: 'Museo Sans Cyrl 700', sans-serif;
+  font-size: 20px;
+  letter-spacing: 4px;
+  color: #ffffff;
+  outline: none;
+  text-transform: uppercase;
+  background: transparent;
+  border: none;
+}
+
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Museo Sans Cyrl 700', sans-serif;
+  font-size: 30px;
+  margin-bottom: 90px;
+}
+
+.icon {
+  font-size: 20px;
+  color: #67a9af;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.input {
+  outline: none;
+  position: relative;
+  border: 1px solid #d0d0d0;
+  padding: 10px 30px;
+  width: 100%;
+}
+
+.input__icon {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 30px;
+  color: #d0d0d0;
+}
+
+.form-group {
+  margin-bottom: 80px;
+}
+
+/* Main styles */
+.header {
+  font-family: 'Museo Sans Cyrl 700', sans-serif;
+  color: #ffffff;
+}
+
+.header-background {
+  background: url("../img/background.jpg") no-repeat center center;
+  background-size: cover;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+.header-phone {
+  text-align: right;
+  color: #ffffff;
+}
+
+.header-phone a {
+  color: #ffffff;
+}
+
+.header-phone_number a {
+  font-size: 24px;
+}
+
+.header-phone_number a:hover {
+  text-decoration: none;
+}
+
+.header-phone_description {
+  text-decoration: underline;
+}
+
+.header-phone_description a {
+  font-size: 16px;
+  font-family: 'Museo Sans Cyrl 300', sans-serif;
+}
+
+.header-title {
+  text-align: center;
+  margin: 160px auto 75px auto;
+}
+
+.header-title h1 {
+  display: block;
+}
+
+.header-title span {
+  font-family: 'Museo Sans Cyrl 300', sans-serif;
+  margin: 20px 0px 70px 0px;
+  display: block;
+  font-size: 24px;
+}
+
+.header_button {
+  padding: 10px 40px;
+  border: 2px solid #ffffff;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  margin-bottom: 155px;
+}
+
+.header_button:hover {
+  color: #000;
+  background: #ffffff;
+}
+
+.header-advantages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-advantages__item {
+  text-align: center;
+  display: block;
+  margin-right: 75px;
+}
+
+.header-advantages__item object {
+  margin-bottom: 15px;
+}
+
+.header-advantages__description {
+  display: block;
+  font-size: 14px;
+  font-family: 'Museo Sans Cyrl 300', sans-serif;
+}
+
+.event {
+  text-align: center;
+}
+
+.event-gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.event-gallery-out {
+  margin-bottom: 80px;
+}
+
+.event-gallery img {
+  width: 315px;
+  height: 315px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.event-form span {
+  display: block;
+  margin-bottom: 60px;
+}
+
+.event__button {
+  display: block;
+  background: #67a9af;
+  width: 100%;
+  padding: 8px;
+}
+
+.carousel {
+  display: none;
+}
+
+.orders-out {
+  background: #e1f7f9;
+}
+
+.orders-advantages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.orders-advantages__item {
+  width: 300px;
+}
+
+.orders-advantages__item span {
+  display: block;
+  margin: 20px auto 80px auto;
+  width: 200px;
+}
+
+.cost {
+  text-align: center;
+}
+
+.cost-card {
+  width: 350px;
+  padding: 40px 20px;
+  margin-bottom: 90px;
+  border: 1px solid #eaeaea;
+}
+
+.cost-card:hover {
+  -webkit-box-shadow: 0px 0px 16px 0px rgba(91, 162, 169, 0.17);
+          box-shadow: 0px 0px 16px 0px rgba(91, 162, 169, 0.17);
+}
+
+.cost-card__price {
+  font-family: 'Museo Sans Cyrl 500', sans-serif;
+  font-size: 48px;
+  color: #67a9af;
+}
+
+.cost-card__price small {
+  font-size: 18px;
+  font-family: 'Museo Sans Cyrl 300', sans-serif;
+}
+
+.cost-card span {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.cost-card__button {
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  padding: 10px 30px;
+  border: 1px solid grey;
+}
+
+.cost-card__button:hover {
+  background: #67a9af;
+  color: #ffffff;
+  border: 1px solid transparent;
+}
+
+.cost-card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.benefits {
+  text-align: center;
+}
+
+.benefits-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.benefits-out {
+  background: #e1f7f9;
+}
+
+.benefits__item {
+  width: 300px;
+}
+
+.benefits__item span {
+  display: block;
+  font-size: 18px;
+  margin: 30px auto 80px auto;
+  font-family: 'Museo Sans Cyrl 300', sans-serif;
+}
+
+.benefits__image {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 210px;
+}
+
+.day {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 120px;
+}
+
+.day-form span {
+  display: block;
+  margin-bottom: 60px;
+}
+
+.day__button {
+  display: block;
+  background: #67a9af;
+  width: 100%;
+  padding: 8px;
+}
+
+.feedback-out {
+  background: #e1f7f9;
+  padding-bottom: 90px;
+}
+
+.feedback-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.feedback-avatar {
+  z-index: 99;
+}
+
+.feedback-comment {
+  background: #ffffff;
+  padding: 100px 60px 100px 180px;
+  margin-left: -120px;
+  z-index: 1;
+}
+
+.feedback-comment__name {
+  font-family: 'Museo Sans Cyrl 700', sans-serif;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.contract-form {
+  margin-top: 80px;
+  margin-bottom: 120px;
+  text-align: center;
+}
+
+.contract-form span {
+  display: block;
+  margin-bottom: 40px;
+}
+
+.contract__button {
+  display: block;
+  background: #67a9af;
+  width: 100%;
+  padding: 8px;
+}
+
+.happy-out {
+  background: #e1f7f9;
+  padding-bottom: 90px;
+}
+
+.happy-container {
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.happy-content__description {
+  text-align: center;
+}
+
+.happy-content__description span {
+  display: block;
+}
+
+.footer-background {
+  background: #000000;
+  padding: 50px 0px;
+}
+
+.footer-phone {
+  text-align: right;
+  color: #ffffff;
+}
+
+.footer-phone a {
+  color: #ffffff;
+}
+
+.footer-phone_number a {
+  font-size: 24px;
+}
+
+.footer-phone_number a:hover {
+  text-decoration: none;
+}
+
+.footer-phone_description {
+  text-decoration: underline;
+}
+
+.footer-phone_description a {
+  font-size: 16px;
+  font-family: 'Museo Sans Cyrl 300', sans-serif;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .feedback-avatar {
+    display: none;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 1001px) {
+  .header-logo-wrap {
+    text-align: center;
+  }
+  .header-title span {
+    padding: 0px 20px;
+  }
+  .header-phone {
+    text-align: center;
+  }
+  .header_button {
+    margin-bottom: 0;
+    padding: 10px 20px;
+  }
+  .header-advantages {
+    margin: 0;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header-advantages__item {
+    margin-right: 0px;
+  }
+  .event-gallery {
+    display: none;
+  }
+  .event-form {
+    margin-top: 20px;
+  }
+  .event__input {
+    margin-bottom: 5px;
+  }
+  .cost-card {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .cost-card-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .benefits__item {
+    margin: 0 auto;
+  }
+  .day__input {
+    margin-bottom: 5px;
+  }
+  .contract__input {
+    margin-bottom: 5px;
+  }
+  .carousel {
+    display: block;
+  }
+  .footer-logo-wrap {
+    text-align: center;
+  }
+  .footer-phone {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1001px) and (max-width: 1800px) {
+  .event-gallery img {
+    width: 180px;
+    height: 180px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

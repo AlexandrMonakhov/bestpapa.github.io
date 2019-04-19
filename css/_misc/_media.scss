@@ -1,0 +1,97 @@
+@media (min-width: 320px) and (max-width: 480px) {
+  .feedback {
+    &-avatar {
+      display: none;
+    }
+  }
+}
+@media (min-width: 320px) and (max-width: 1001px) {
+  .header {
+    &-logo {
+      &-wrap {
+        text-align: center;
+      }
+    }
+    &-title {
+      span {
+        padding: 0px 20px;
+      }
+    }
+    &-phone {
+      text-align: center;
+    }
+    &_button {
+      margin-bottom: 0;
+      padding: 10px 20px;
+    }
+    &-advantages {
+      margin: 0;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      &__item {
+        margin-right: 0px;
+      }
+    }
+  }
+  .event {
+    &-gallery {
+      display: none;
+    }
+    &-form {
+      margin-top: 20px;
+    }
+    &__input {
+      margin-bottom: 5px;
+    }
+  }
+  .cost{
+    &-card {
+    width: 100%;
+    margin-bottom: 10px;
+      &-container {
+      flex-direction: column;
+      }
+    }
+  }
+  .benefits {
+    &__item {
+      margin: 0 auto;
+    }
+  }
+  .day {
+    &__input {
+      margin-bottom: 5px;
+    }
+  }
+  .contract {
+    &__input {
+      margin-bottom: 5px;
+    }
+  }
+  .carousel {
+    display: block;
+  }
+  .footer {
+      &-logo {
+        &-wrap {
+          text-align: center;
+        }
+      }
+      &-phone {
+        text-align: center;
+      }
+  }
+}
+
+@media (min-width: 1001px) and (max-width: 1800px) {
+  .event {
+    &-gallery {
+      img {
+        width: 180px;
+        height: 180px;
+      }
+    }
+  }
+}
